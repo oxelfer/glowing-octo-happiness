@@ -1,5 +1,7 @@
 import './App.css';
 
+import { Routes, Route } from 'react-router-dom';
+
 import { Home } from './pages/home';
 import { Collections } from './pages/collections';
 import { Exhibits } from './pages/exhibits';
@@ -13,17 +15,26 @@ import Header from './components/header';
 function App() {
   return (
     <>
-      <Header />
+      <header>
+        <Header />
+      </header>
 
-      <Home />
-      <Collections />
-      <Exhibits />
-      <About />
-      <Contacts />
-      <Visit />
-      <NotFound />
+      <main>
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='collections' element={<Collections />} />
+          <Route path='exhibits' element={<Exhibits />} />
+          <Route path='about' element={<About />} />
+          <Route path='contacts' element={<Contacts />} />
+          <Route path='visit' element={<Visit />} />
+          <Route path='*' element={<NotFound />} />
+        </Routes>
 
+      </main>
       
+      <footer>
+        <p>&copy; Footer placeholder</p>
+      </footer>
     </>
     
   );

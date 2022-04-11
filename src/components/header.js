@@ -8,7 +8,7 @@ export default function Header() {
       <p>Placeholder while I think about the header... and test Git.</p>
 
       <nav>
-        <ul>
+        <ul className='site-nav'>
           <li><Link to='/'>Home</Link></li>
           <li><Link to='collections'>Collections</Link></li>
           <li><Link to='exhibits'>Exhibits</Link></li>
@@ -17,7 +17,7 @@ export default function Header() {
           <li><Link to='visit'>Visit</Link></li>
         </ul>
       </nav>
-      
+
     </header>
   )
 }

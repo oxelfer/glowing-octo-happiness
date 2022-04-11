@@ -1,0 +1,23 @@
+.site-nav {
+  display: flex;
+  justify-content: flex-end;
+  padding: .5em;
+  list-style-type: none;
+  background-color: var(--color-back-sec);
+}
+
+.site-nav > li {
+  margin-top: 0;
+}
+
+.site-nav > li > a {
+  display: block;
+  padding: .5em 1em;
+  background-color: var(--color-mid-red);
+  color: var(--color-text-white);
+  text-decoration: none;
+}
+
+.site-nav > li + li {
+  margin-left: 1.5em;
+}

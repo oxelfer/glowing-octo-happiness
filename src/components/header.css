@@ -1,6 +1,12 @@
+.header {
+  background-color: var(--color-back-sec);
+  margin: 0;
+}
+
 .site-nav {
   display: flex;
   justify-content: flex-end;
+  margin: 0;
   padding: .5em;
   list-style-type: none;
   background-color: var(--color-back-sec);

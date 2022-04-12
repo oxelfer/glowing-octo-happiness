@@ -22,7 +22,7 @@ export function ObjectDetail() {
   return (
     <>
       <h2>Object detail placeholder - {params.id}</h2>
-      <article key={piece['id']} className='object__card'>
+      <article className='object__card'>
         <header>
           <h3 className='card__title'>{piece['title']}</h3>
           <p className='card__author'>{piece['artist_display']}</p>

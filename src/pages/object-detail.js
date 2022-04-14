@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 
+import GoBackButton from '../components/go-back-button';
+
 import './object-detail.css';
 
 export function ObjectDetail() {
@@ -28,12 +30,15 @@ export function ObjectDetail() {
           <p className='card__author'>{piece['artist_display']}</p>
         </header>
 
-        <picture className='card__picture'>
-          <img className='card__image' src={`https://www.artic.edu/iiif/2/${piece['image_id']}/full/843,/0/default.jpg`} alt={piece['title']} />
-        </picture>
+        {piece['image_id'] && 
+          <picture className='card__picture'>
+            <img className='card__image' src={`https://www.artic.edu/iiif/2/${piece['image_id']}/full/600,/0/default.jpg`} alt={piece['alt_text']} title={`${piece['title']} by ${piece['artist_display']}`} />
+          </picture>}
 
         <p className='card__ref'> {piece['id']} </p>
       </article>
+
+      <GoBackButton />
 
     </>
   )

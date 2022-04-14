@@ -4,6 +4,7 @@ import { Routes, Route } from 'react-router-dom';
 
 import { Home } from './pages/home';
 import { Collections } from './pages/collections';
+import { CollectionCatalogue } from './pages/collection-catalogue';
 import { ObjectDetail } from './pages/object-detail';
 import { Exhibits } from './pages/exhibits';
 import { About } from './pages/about';
@@ -12,6 +13,7 @@ import { Visit } from './pages/visit';
 import { NotFound } from './pages/not-found';
 
 import Header from './components/header';
+import Footer from './components/footer';
 
 function App() {
   return (
@@ -24,7 +26,8 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/collections' element={<Collections />} />
-          <Route path="/collections/:id" element={<ObjectDetail />} />
+          <Route path='/catalogue/:search' element={<CollectionCatalogue />} />
+          <Route path="/object/:id" element={<ObjectDetail />} />
           <Route path='/exhibits' element={<Exhibits />} />
           <Route path='/about' element={<About />} />
           <Route path='/contacts' element={<Contacts />} />
@@ -35,7 +38,7 @@ function App() {
       </main>
       
       <footer>
-        <p>&copy; Footer placeholder</p>
+        <Footer />
       </footer>
     </>
     

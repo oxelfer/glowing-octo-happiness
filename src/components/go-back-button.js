@@ -6,6 +6,6 @@ export default function GoBackButton() {
   const navigate = useNavigate();
 
   return (
-    <button className="goback__button" onClick={() => navigate(-1)}>Previous page</button>
+    <button className='goback__button' onClick={() => navigate(-1)}>Previous page</button>
   )
 }

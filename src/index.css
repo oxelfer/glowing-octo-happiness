@@ -1,5 +1,4 @@
-@import url('https://use.typekit.net/uyz1clf.css');
-@import url('https://fonts.googleapis.com/css2?family=Junge&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap');
 /* @import url('https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp'); */
 
@@ -45,7 +44,7 @@
 }
 
 body {
-  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  font-family: 'PT Serif', Times, 'Times New Roman', serif;
   line-height: 1.5;
   margin: 0;
   background-color: var(--color-back);
@@ -57,9 +56,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family:  'dashiell-fine', 'swear-display', 'Junge', Times, 'Times New Roman', serif;
-  font-weight: 300;
-  letter-spacing: 2px;
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
 }
 
 .container {

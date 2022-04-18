@@ -13,6 +13,7 @@ import { Visit } from './pages/visit';
 import { NotFound } from './pages/not-found';
 
 import Header from './components/header';
+import Hero from './components/hero';
 import Footer from './components/footer';
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
     <>
       <header>
         <Header />
+        <Hero />
       </header>
 
       <main className='container'>
@@ -34,6 +36,8 @@ function App() {
           <Route path='/visit' element={<Visit />} />
           <Route path='*' element={<NotFound />} />
         </Routes>
+
+
 
       </main>
       

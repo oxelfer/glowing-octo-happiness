@@ -3,6 +3,7 @@
   margin: 0;
   display: flex;
   height: 8em;
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
 }
 
 .header__picture {
@@ -12,6 +13,7 @@
 
 .header__logo {
   height: 100%;
+  padding: .5em;
 }
 
 .header__right {
@@ -23,6 +25,7 @@
 .header__search {
   flex: 1;
   text-align: right;
+  padding: .5em;
 }
 
 .header__site-nav {

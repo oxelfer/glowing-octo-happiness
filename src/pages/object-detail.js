@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 
+import Title from '../components/title';
 import GoBackButton from '../components/go-back-button';
 
 import './object-detail.css';
@@ -23,7 +24,8 @@ export function ObjectDetail() {
     
   return (
     <>
-      <h2>Object detail placeholder - {params.id}</h2>
+      <Title text={`${piece['title']} - ${params.id}`} />
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil eum delectus quisquam, magni iusto officiis! Quam deleniti iure ratione cumque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum voluptate aperiam eveniet consequuntur magnam molestias porro earum in rem totam, nostrum deleniti nesciunt laudantium maxime, nisi itaque dolores, consectetur praesentium?</p>
       <article className='object__card'>
         <header>
           <h3 className='card__title'>{piece['title']}</h3>

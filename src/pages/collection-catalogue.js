@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link, useParams } from 'react-router-dom';
 
+import Title from '../components/title';
 import GoBackButton from '../components/go-back-button';
 
 import './collection-catalogue.css';
@@ -24,6 +25,7 @@ export function CollectionCatalogue() {
 
   return (
     <>
+      <Title text={`Permanent ${params.search} collection`} />
       <h2>Collections placeholder</h2>
       {pieces.map((item, index) => {
         return (

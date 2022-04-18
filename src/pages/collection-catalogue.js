@@ -26,7 +26,9 @@ export function CollectionCatalogue() {
   return (
     <>
       <Title text={`Permanent ${params.search} collection`} />
-      <h2>Collections placeholder</h2>
+      
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, quae modi inventore distinctio tempora ipsam? Pariatur itaque vel maxime reiciendis quasi natus saepe, illo odio earum similique laborum quia dignissimos veritatis vero, ratione, recusandae perspiciatis animi ea. Consequuntur, sit? Quos est doloremque, nobis saepe cumque molestiae unde dolores quod molestias!</p>
+
       {pieces.map((item, index) => {
         return (
           <article key={pieces[index]['id']} className='object__card'>

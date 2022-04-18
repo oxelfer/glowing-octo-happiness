@@ -24,7 +24,7 @@ export function ObjectDetail() {
     
   return (
     <>
-      <Title text={`${piece['title']} - ${params.id}`} />
+      {piece['title'] && <Title text={`${piece['title']} - ${params.id}`} />}
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil eum delectus quisquam, magni iusto officiis! Quam deleniti iure ratione cumque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum voluptate aperiam eveniet consequuntur magnam molestias porro earum in rem totam, nostrum deleniti nesciunt laudantium maxime, nisi itaque dolores, consectetur praesentium?</p>
       <article className='object__card'>
         <header>

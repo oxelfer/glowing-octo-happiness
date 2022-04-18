@@ -1,0 +1,8 @@
+.goback__button {
+  margin-top: 1em;
+  background-color: var(--color-mid-white);
+  font-size: 1em;
+  color: var(--color-mid-blue);
+  border: 1px solid var(--color-mid-blue);
+  padding: 0.6em 1.2em;
+}

@@ -2,6 +2,8 @@ import './footer.css'
 
 export default function Footer() {
   return (
-    <p>&copy; Footer placeholder</p>
+    <div className='footer-container'>
+      <p className='textoteste'>&copy; Footer placeholder</p>
+    </div>
   )
 }

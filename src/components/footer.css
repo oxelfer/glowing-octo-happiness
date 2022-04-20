@@ -1,8 +1,60 @@
-.footer {
+.footer-container {
   position: relative;
+  top: 5em;
+  background-color: var(--color-back-sec);
+  margin-top: 2em;
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+
 }
 
-.textoteste {
-  position: absolute;
-  bottom: 0;
+.footer__row {
+  padding: 2em 1em;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2em;
+}
+
+.footer__col-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__picture {
+  
+}
+
+.footer__image {
+  max-width: 18em;
+  height: auto;
+}
+
+.footer__paragraph {
+
+}
+
+.footer__socialmedia {
+
+}
+
+.footer__col-center {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__col-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__copyrights {
+  text-align: center;
+  padding: 2em 0;
+}
+
+
+
+@media screen and (max-width: 640px) {
+  .footer__row {
+    grid-template-columns: 1fr;
+  }
 }

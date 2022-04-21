@@ -35,9 +35,6 @@ export default function Header() {
       </picture>
 
       <div className='header__right'>
-{/*         <div className='header__search'>
-          <p>Placeholder search?</p>
-        </div> */}
 
         <nav className='header__nav-site'>
           <ul className='nav-site__menu'>
@@ -67,7 +64,6 @@ export default function Header() {
         </nav>
 
       </div>
-
 
     </header>
   )

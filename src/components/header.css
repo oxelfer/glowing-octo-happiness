@@ -23,13 +23,6 @@
   flex-direction: column-reverse;
 }
 
-/* .header__search {
-  flex: 1;
-  text-align: right;
-  padding: calc(.5em - 2px);
-  display: block;
-} */
-
 .header__nav-site {
   display: block;
 }

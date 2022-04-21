@@ -100,13 +100,8 @@
     padding: 1em;
   }
 
-  .nav-mob__hide:hover {
-    color: var(--color-text-red);
-    transition: 0.3s;
-  }
-
   .nav-mob__menu {
-    display: none;
+    display: block;
     margin: 0;
     padding: 0;
     position: fixed;

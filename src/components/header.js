@@ -4,11 +4,10 @@ import './header.css';
 
 export default function Header() {
 
-  const showMenu = () => {
+  const hideMenu = () => {
     let menu = document.getElementById('nav-mob-menu');
     let symbol = document.getElementById('click-symbol');
     let main = document.getElementById('main-content');
-    let footer = document.getElementById('footer-container');
 
     if (menu.style.display === 'none') {
       main.style['margin-top'] = '23em';
@@ -19,7 +18,6 @@ export default function Header() {
       menu.style.display = 'none';
       symbol.innerText = 'expand_more';
     }
-
   }
 
   return (
@@ -42,9 +40,9 @@ export default function Header() {
         </nav>
 
         <nav className='header__nav-mob'>
-          <div className='nav-mob__hide' onClick={ showMenu }>
+          <div className='nav-mob__hide' onClick={ hideMenu }>
             <span id='click-symbol' className="material-icons-outlined">
-              expand_more
+              expand_less
             </span>
           </div>
           <ul id='nav-mob-menu' className='nav-mob__menu'>

@@ -3,3 +3,8 @@
   margin-top: 5em;
 }
 
+@media screen and (max-width: 640px) {
+  #main-content {
+    margin-top: 23em;
+  }
+}

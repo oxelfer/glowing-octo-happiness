@@ -24,7 +24,7 @@ function App() {
         <Hero />
       </header>
 
-      <main className='container'>
+      <main id='main-content' className='container'>
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/collections' element={<Collections />} />

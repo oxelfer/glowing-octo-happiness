@@ -3,3 +3,9 @@
   height: 100vh;
   z-index: 1;
 }
+
+.map-embed {
+  aspect-ratio: 13/10;
+  max-width: 100%;
+  height: auto;
+}

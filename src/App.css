@@ -1,6 +1,5 @@
 .container {
   max-width: 1080px;
-  position: relative;
-  top: 5em;
+  margin-top: 5em;
 }
 

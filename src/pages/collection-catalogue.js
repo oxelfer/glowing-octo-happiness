@@ -22,7 +22,6 @@ export function CollectionCatalogue() {
 
   }, []);
   
-
   return (
     <>
       <Title text={`Permanent ${params.search} collection`} />
@@ -45,7 +44,6 @@ export function CollectionCatalogue() {
             <p className='card__ref'> {pieces[index]['id']} </p>
             
           </article>
-
         )
       })}
       

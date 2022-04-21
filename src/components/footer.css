@@ -1,10 +1,7 @@
 .footer-container {
-  position: relative;
-  top: 5em;
   background-color: var(--color-back-sec);
   margin-top: 2em;
   font-family: 'Roboto', Helvetica, Arial, sans-serif;
-
 }
 
 .footer__picture {
@@ -46,20 +43,8 @@
   margin-top: 1em;
 }
 
-.footer__link:link {
-  
-}
-
-.footer__link:visited {
-  
-}
-
 .footer__link:hover {
   color: var(--color-text-red);
-}
-
-.footer__link:active {
-
 }
 
 .footer__socialmedia {

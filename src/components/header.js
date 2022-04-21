@@ -11,17 +11,11 @@ export default function Header() {
     let footer = document.getElementById('footer-container');
 
     if (menu.style.display === 'none') {
-      main.style.position = 'relative';
-      main.style.top = '23em';
-      footer.style.position = 'relative';
-      footer.style.top = '23em';
+      main.style['margin-top'] = '23em';
       menu.style.display = 'block';
       symbol.innerText = 'expand_less';
     } else {
-      main.style.position = 'relative';
-      main.style.top = '5em';
-      footer.style.position = 'relative';
-      footer.style.top = '5em';
+      main.style['margin-top'] = '5em';
       menu.style.display = 'none';
       symbol.innerText = 'expand_more';
     }

@@ -14,6 +14,7 @@ import { NotFound } from './pages/not-found';
 
 import Header from './components/header';
 import Hero from './components/hero';
+import Newsletter from './components/newsletter';
 import Footer from './components/footer';
 
 function App() {
@@ -36,6 +37,8 @@ function App() {
           <Route path='/visit' element={<Visit />} />
           <Route path='*' element={<NotFound />} />
         </Routes>
+
+        <Newsletter />
       </main>
       
       <footer>

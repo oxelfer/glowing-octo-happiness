@@ -1,6 +1,7 @@
 .container__hero {
   display: block;
   position: relative;
+  box-shadow: var(--shadow-bottom);
 }
 
 .hero__image {

@@ -77,6 +77,7 @@
     top: 0;
     width: 100%;
     z-index: 10;
+    box-shadow: var(--shadow-bottom);
   }
   
   .header__nav-site {
@@ -110,6 +111,7 @@
     list-style: none;
     width: 100%;
     text-align: center;
+    box-shadow: var(--shadow-bottom);
   }
 
   .nav-mob__menu > li {

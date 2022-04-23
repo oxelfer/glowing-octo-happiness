@@ -2,6 +2,7 @@
   background-color: var(--color-back-sec);
   margin-top: 2em;
   font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  box-shadow: var(--shadow-top);
 }
 
 .footer__picture {

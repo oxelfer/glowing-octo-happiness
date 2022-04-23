@@ -1,14 +1,14 @@
 .goback__button {
   margin-top: 1em;
-  background-color: var(--color-mid-white);
+  background-color: var(--color-mid-blue);
   font-size: 1em;
-  color: var(--color-mid-blue);
+  color: var(--color-text-white);
   border: 1px solid var(--color-mid-blue);
   padding: 0.6em 1.2em;
   cursor: pointer;
 }
 
 .goback__button:hover {
-  background-color: var(--color-mid-blue);
-  color: var(--color-mid-white);
+  background-color: var(--color-back-sec);
+  color: var(--color-text-blue);
 }

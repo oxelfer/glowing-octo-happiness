@@ -56,6 +56,12 @@ h6 {
   font-family: 'Roboto', Helvetica, Arial, sans-serif;
 }
 
+p {
+  text-align: justify;
+  letter-spacing: 0.5px;
+  line-height: 1.8;
+}
+
 .container {
   max-width: 1080px;
   margin: 0 auto;

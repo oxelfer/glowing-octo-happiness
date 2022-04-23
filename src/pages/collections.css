@@ -1,0 +1,39 @@
+.collection__intro {
+
+}
+
+.collection__link {
+  text-decoration: none;
+  color: var(--color-text-white);
+}
+
+.collection__article {
+  display: block;
+  text-align: center;
+  margin: 4em 0;
+  position: relative;
+}
+
+.collection__picture {
+  
+}
+
+.collection__image {
+  max-width: 100%;
+  height: auto;
+}
+
+.collection__title {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2em;
+  text-shadow: var(--shadow);
+}
+
+.collection__news {
+
+}
+
+

@@ -1,0 +1,59 @@
+.exhibits__intro {
+
+}
+
+.exhibits__article {
+  display: flex;
+  justify-content: center;
+  margin: 2em -1em;
+}
+
+.exhibits__link {
+  display: block;
+  text-decoration: none;
+  color: var(--color-text-white);
+  background-color: var(--color-back);
+  height: 100%;
+}
+
+.exhibits__container {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  max-width: 600px;
+  max-height: 400px;
+  margin: auto;
+}
+
+.exhibits__picture {
+
+}
+
+.exhibits__image {
+  max-width: 100%;
+  transition: 0.5s ease;
+}
+
+.exhibits__link:hover .exhibits__image {
+  transform: scale(1.2);
+  opacity: 0.5;
+}
+
+.exhibits__title {
+  font-size: 2em;
+  text-shadow: var(--shadow);
+  position: absolute;
+  bottom: 1em;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  transition: 0.5s ease;
+}
+
+.exhibits__link:hover .exhibits__title {
+  color: var(--color-text-blue);
+}
+
+.exhibits__news {
+
+}

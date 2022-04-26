@@ -1,7 +1,7 @@
 .carousel__container {
   display: block;
   position: relative;
-  margin: 2em 0;
+  margin: 2em 0 3.5em;
   aspect-ratio: 3/1;
   color: var(--color-text-white);
 }
@@ -10,13 +10,13 @@
   position: absolute;
   top: 0;
   left: 0;
-  /* opacity: 0; */
+  opacity: 0;
 }
 
 .carousel__slide--active {
   opacity: 1;
   z-index: 1;
-  transition: 0.5s;
+  transition: ease-out 500ms;
 }
 
 .carousel__picture {
@@ -48,7 +48,6 @@
 
 .carousel__link {
   margin: 0;
-  text-decoration: none;
   font-size: 1.2em;
   font-weight: 700;
   color: var(--color-text-white);
@@ -69,6 +68,10 @@
   color: var(--color-text-white);
 }
 
+.carousel__button:hover {
+  color: rgba(36, 87, 115, 0.5);
+}
+
 .carousel__arrow-left {
   left: 0;
 }
@@ -79,4 +82,40 @@
 
 .symbol__size {
   font-size: 5em;
+}
+
+.carousel__location {
+  position: absolute;
+  bottom: -2em;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.carousel__dot {
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  margin: 0 .5em;
+  background-color: var(--color-back-sec);
+  border: 1px solid var(--color-text-blue);
+  display: inline-block;
+  text-align: center;
+}
+
+.carousel__dot:hover {
+  background-color: rgba(36, 87, 115, 0.5);
+}
+
+.carousel__dot--active {
+  background-color: var(--color-mid-blue);
+}
+
+@media screen and (max-width: 640px) {
+  .carousel__button:hover {
+    color: var(--color-text-white);
+  }
+
+  .carousel__dot:hover {
+    background-color: var(--color-text-blue);
+  }
 }

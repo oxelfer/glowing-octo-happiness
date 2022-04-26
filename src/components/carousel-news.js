@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
 import NewsItems from '../mocks/news-mock';
 
@@ -12,18 +12,30 @@ export default function CarouselNews() {
   const [current, setCurrent] = useState(0);
 
   const prevSlide = () => {
-    console.log('Going back!')
+    let prev = current - 1;
+    if (prev < 0) {
+      prev = newsItems.length - 1;
+    }
+    setCurrent(prev);
   }
 
   const nextSlide = () => {
-    console.log('Going forward!')
+    let next = current + 1;
+    if (next >= newsItems.length) {
+      next = 0;
+    }
+    setCurrent(next);
+  }
+
+  const currentSlide = (n) => {
+    setCurrent(n);
   }
 
   return (
     <div className='carousel__container'>
       {newsItems.map( (item, index) => {
         return (
-          <article key={item.id} className={`carousel__slide ${ index === current ? '.carousel__slide--active' : ''}`}>
+          <article key={item.id} className={`carousel__slide ${ index === current ? 'carousel__slide--active' : ''}`}>
             <picture className='carousel__picture'>
               <img className='carousel__image' src={item.image} alt={item.alt} />
             </picture>
@@ -47,6 +59,13 @@ export default function CarouselNews() {
         </span>
       </button>
 
+      <div className='carousel__location'>
+        {newsItems.map( (item, index) => {
+          return (
+            <span key={'dot' + item.id} className={`carousel__dot ${ index === current ? 'carousel__dot--active' : ''}`} onClick={() => currentSlide(index)}></span>
+          )
+        })}
+      </div>
     </div>
     
   )

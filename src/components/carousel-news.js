@@ -27,10 +27,6 @@ export default function CarouselNews() {
     setCurrent(next);
   }
 
-  const currentSlide = (n) => {
-    setCurrent(n);
-  }
-
   return (
     <div className='carousel__container'>
       {newsItems.map( (item, index) => {
@@ -62,7 +58,7 @@ export default function CarouselNews() {
       <div className='carousel__location'>
         {newsItems.map( (item, index) => {
           return (
-            <span key={'dot' + item.id} className={`carousel__dot ${ index === current ? 'carousel__dot--active' : ''}`} onClick={() => currentSlide(index)}></span>
+            <span key={'dot' + item.id} className={`carousel__dot ${ index === current ? 'carousel__dot--active' : ''}`} onClick={() => setCurrent(index)}></span>
           )
         })}
       </div>

@@ -1,36 +1,51 @@
-import './carousel-news.css';
+import { useState, useEffect } from 'react';
 
-import robin from '../imgs/robin.jpg';
-import lizard from '../imgs/lizard.jpg';
-import workshop from '../imgs/workshop.jpg';
+import NewsItems from '../mocks/news-mock';
+
+import './carousel-news.css';
 
 export default function CarouselNews() {
 
+  const newsItems = NewsItems();
+  /* console.log(newsItems); */
+
+  const [current, setCurrent] = useState(0);
+
+  const prevSlide = () => {
+    console.log('Going back!')
+  }
+
+  const nextSlide = () => {
+    console.log('Going forward!')
+  }
+
   return (
     <div className='carousel__container'>
+      {newsItems.map( (item, index) => {
+        return (
+          <article key={item.id} className={`carousel__slide ${ index === current ? '.carousel__slide--active' : ''}`}>
+            <picture className='carousel__picture'>
+              <img className='carousel__image' src={item.image} alt={item.alt} />
+            </picture>
+            <div className='carousel__content'>
+              <h3 className='carousel__title'>{item.title}</h3>
+              <a className='carousel__link' href={item.url}>{item.button}</a>
+            </div>
+          </article>
+        )
+      })}
+      
+      <button className='carousel__button carousel__arrow-left' onClick={prevSlide}>
+        <span className='material-symbols-outlined symbol__size'>
+          chevron_left
+        </span>
+      </button>
 
-      <div className='carousel__slide'>
-        <img className='carousel__image' src={robin} alt='' />
-        <div className='carousel__caption'>Winged paintings</div>
-      </div>
-
-      <div className='carousel__slide'>
-        <img className='carousel__image' src={lizard} alt='' />
-        <div className='carousel__caption'>Lizards in art</div>
-      </div>
-
-      <div className='carousel__slide'>
-        <img className='carousel__image' src={workshop} alt='' />
-        <div className='carousel__caption'>Conservation activities</div>
-      </div>
-
-      <a className='carousel__arrow-left material-symbols-outlined'>
-        chevron_left
-      </a>
-
-      <a className='carousel__arrow-right material-symbols-outlined'>
-        navigate_next
-      </a>
+      <button className='carousel__button carousel__arrow-right' onClick={nextSlide}>
+        <span className='material-symbols-outlined symbol__size'>
+          navigate_next
+        </span>
+      </button>
 
     </div>
     

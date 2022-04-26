@@ -5,7 +5,7 @@
 .exhibits__article {
   display: flex;
   justify-content: center;
-  margin: 2em -1em;
+  margin: 2em 0;
 }
 
 .exhibits__link {
@@ -52,8 +52,4 @@
 
 .exhibits__link:hover .exhibits__title {
   color: var(--color-text-blue);
-}
-
-.exhibits__news {
-
 }

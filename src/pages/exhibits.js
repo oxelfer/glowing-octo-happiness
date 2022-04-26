@@ -27,9 +27,7 @@ export function Exhibits() {
         </Link>
       </article>
 
-      <div className='exhibits__news'>
-        <CarouselNews />
-      </div>
+      <CarouselNews />
 
       <article className='exhibits__article'>
         <Link className='exhibits__link' to={{ pathname: '/catalogue/lizards' }}>

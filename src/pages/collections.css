@@ -5,7 +5,7 @@
 .collection__article {
   display: flex;
   justify-content: center;
-  margin: 2em -1em;
+  margin: 2em 0;
 }
 
 .collection__link {
@@ -52,8 +52,4 @@
 
 .collection__link:hover .collection__title {
   color: var(--color-text-blue);
-}
-
-.collection__news {
-
 }

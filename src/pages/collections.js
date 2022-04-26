@@ -40,9 +40,7 @@ export function Collections() {
         </Link>
       </article>
 
-      <div className='collection__news'>
-        <CarouselNews />
-      </div>
+      <CarouselNews />
 
       <article className='collection__article'>
         <Link className='collection__link' to={{ pathname: '/catalogue/sunflowers' }}>

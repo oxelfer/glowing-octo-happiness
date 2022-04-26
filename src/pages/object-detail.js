@@ -14,34 +14,38 @@ export function ObjectDetail() {
   
   useEffect(() => {
     
-    fetch(`https://api.artic.edu/api/v1/artworks/${params.id}?fields=id,title,artist_display,date_display,medium_display,department_title,dimensions,category_titles,image_id,alt_text`)
+    fetch(`https://api.artic.edu/api/v1/artworks/${params.id}?fields=id,title,artist_display,date_display,medium_display,department_title,dimensions,category_titles,image_id,thumbnail`)
       .then(response => response.json())
       .then(data => {
         setPiece(data.data);
       });
 
   }, []);
-    
+
   return (
-    <>
+    <div className='object-container'>
       {piece['title'] && <Title text={`${piece['title']} - ${params.id}`} />}
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil eum delectus quisquam, magni iusto officiis! Quam deleniti iure ratione cumque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum voluptate aperiam eveniet consequuntur magnam molestias porro earum in rem totam, nostrum deleniti nesciunt laudantium maxime, nisi itaque dolores, consectetur praesentium?</p>
       <article className='object__card'>
-        <header>
+        <header className='card__header'>
           <h3 className='card__title'>{piece['title']}</h3>
-          <p className='card__author'>{piece['artist_display']}</p>
+          <p className='card__author'><span className='category'>Author:</span> {piece['artist_display']}</p>
         </header>
 
-        {piece['image_id'] && 
+        {piece['image_id'] &&
           <picture className='card__picture'>
-            <img className='card__image' src={`https://www.artic.edu/iiif/2/${piece['image_id']}/full/600,/0/default.jpg`} alt={piece['alt_text']} title={`${piece['title']} by ${piece['artist_display']}`} />
+            <img className='card__image' src={`https://www.artic.edu/iiif/2/${piece['image_id']}/full/600,/0/default.jpg`} alt={piece['title']} title={`${piece['title']} by ${piece['artist_display']}`} />
           </picture>}
 
-        <p className='card__ref'> {piece['id']} </p>
+        <p className='card__department'><span className='category'>Department:</span> {piece['department_title']} </p>
+        <p className='card__dimensions'><span className='category'>Dimensions:</span> {piece['dimensions']}</p>
+        <p className='card__medium'><span className='category'>Medium:</span> {piece['medium_display']}.</p>
+        <p className='card__date'><span className='category'>Date:</span> {piece['date_display']} </p>
+        <p className='card__ref'><span className='category'>Ref.:</span> {piece['id']} </p>
+
       </article>
 
       <GoBackButton />
 
-    </>
+    </div>
   )
 }

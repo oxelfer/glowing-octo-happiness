@@ -28,28 +28,26 @@ export function CollectionCatalogue() {
       
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, quae modi inventore distinctio tempora ipsam? Pariatur itaque vel maxime reiciendis quasi natus saepe, illo odio earum similique laborum quia dignissimos veritatis vero, ratione, recusandae perspiciatis animi ea. Consequuntur, sit? Quos est doloremque, nobis saepe cumque molestiae unde dolores quod molestias!</p>
 
-      {pieces.map((item, index) => {
-        return (
-          <article key={pieces[index]['id']} className='object__card'>
-            <header>
-              <h3 className='card__title'>{pieces[index]['title']}</h3>
-              <p className='card__author'>{pieces[index]['artist_display']}</p>
-            </header>
-            <Link to={`/object/${pieces[index]['id']}`} className='card__link'>
-            {pieces[index]['image_id'] && 
-              <picture className='card__picture'>
-                <img className='card__image' src={`https://www.artic.edu/iiif/2/${pieces[index]['image_id']}/full/400,/0/default.jpg`} alt={pieces[index]['alt_text']} title={`${pieces[index]['title']} by ${pieces[index]['artist_display']}`} />
-              </picture>}
-            </Link>
-            <p className='card__ref'> {pieces[index]['id']} </p>
-            
-          </article>
-        )
-      })}
-      
-      <Link to={`/collections`}>
-        <p>Testing link to collections</p>
-      </Link>
+      <div className='catalogue-container'>
+        {pieces.map((item, index) => {
+          return (
+            <article key={pieces[index]['id']} className='catalogue__card'>
+              <header>
+                <h3 className='catalogue__title'>{pieces[index]['title']}</h3>
+                <p className='catalogue__author'>{pieces[index]['artist_display']}</p>
+              </header>
+              <Link to={`/object/${pieces[index]['id']}`} className='catalogue__link'>
+              {pieces[index]['image_id'] && 
+                <picture className='catalogue__picture'>
+                  <img className='catalogue__image' src={`https://www.artic.edu/iiif/2/${pieces[index]['image_id']}/full/400,/0/default.jpg`} alt={pieces[index]['alt_text']} title={`${pieces[index]['title']} by ${pieces[index]['artist_display']}`} />
+                </picture>}
+              </Link>
+              <p className='catalogue__ref'> {pieces[index]['id']} </p>
+              
+            </article>
+          )
+        })}
+      </div>
 
       <GoBackButton />
     </>

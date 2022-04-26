@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp');
+@import url('https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Symbols+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp');
 
 :root {
   box-sizing: border-box;
@@ -54,6 +54,12 @@ h4,
 h5,
 h6 {
   font-family: 'Roboto', Helvetica, Arial, sans-serif;
+}
+
+p {
+  text-align: justify;
+  letter-spacing: 0.5px;
+  line-height: 1.8;
 }
 
 .container {

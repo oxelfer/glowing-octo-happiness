@@ -24,7 +24,7 @@ export function ObjectDetail() {
 
   return (
     <div className='object-container'>
-      {piece['title'] && <Title text={`${piece['title']} - ${params.id}`} />}
+      {piece['title'] && <Title text={`${piece['title']} - ref. ${params.id}`} />}
       <article className='object__card'>
         <header className='card__header'>
           <h3 className='card__title'>{piece['title']}</h3>

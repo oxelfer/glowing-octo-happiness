@@ -1,8 +1,11 @@
 import { Link } from 'react-router-dom';
 
 import Title from '../components/title';
+import IntroParagraph from '../components/intro';
 import CarouselNews from '../components/carousel-news';
 import GoBackButton from '../components/go-back-button';
+
+import IntroMock from '../mocks/intro-mock';
 
 import cat from '../imgs/cat.jpg';
 import dog from '../imgs/dog.jpg';
@@ -12,11 +15,13 @@ import fruit from '../imgs/still-life.jpg';
 import './collections.css';
 
 export function Collections() {
+  const introText = IntroMock()[1];
+
   return (
     <>
       <Title text='Museum collections' />
 
-      <p className='collection__intro'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas quae deleniti, delectus accusantium commodi id magni quis voluptatum facilis. Illum necessitatibus consectetur sint, deserunt natus voluptatibus sed soluta quod iusto aliquid nostrum qui ad alias earum esse inventore eum nulla at. Illum pariatur consequatur iure itaque nisi numquam est commodi.</p>
+      <IntroParagraph text={introText.page + ' - ' + introText.text} />
 
       <article className='collection__article'>
         <Link className='collection__link' to={{ pathname: '/catalogue/cats' }}>

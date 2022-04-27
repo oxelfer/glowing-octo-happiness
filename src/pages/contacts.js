@@ -1,12 +1,18 @@
 import Title from '../components/title';
+import IntroParagraph from '../components/intro';
+
+import IntroMock from '../mocks/intro-mock';
 
 import './contacts.css';
 
 export function Contacts() {
+  const introText = IntroMock()[4];
+
   return (
     <>
       <Title text='Contacts' />
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, tenetur repudiandae aliquam minus delectus accusantium corrupti tempore necessitatibus nulla officia ipsa ipsum aliquid adipisci. Corrupti laudantium a optio modi excepturi deleniti saepe deserunt culpa accusamus vitae autem aut aliquid eum velit nobis voluptas voluptates tempore praesentium, blanditiis doloremque porro ex?</p>
+      
+      <IntroParagraph text={introText.page + ' - ' + introText.text} />
     </>
   )
 }

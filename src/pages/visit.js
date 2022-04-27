@@ -1,14 +1,19 @@
 import Title from '../components/title';
+import IntroParagraph from '../components/intro';
 import MapComponent from '../components/maps';
+
+import IntroMock from '../mocks/intro-mock';
 
 import './visit.css';
 
 export function Visit() {
+  const introText = IntroMock()[5];
+
   return (
     <>
       <Title text='How to visit' />
       
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, delectus repudiandae. Ullam quisquam, illo reiciendis soluta deleniti placeat et eos commodi officiis! Vitae quidem assumenda laudantium eligendi blanditiis aliquam unde quisquam praesentium non ipsam eaque voluptate perferendis molestiae, consequatur porro suscipit nam sit, ea, quos est soluta fuga et itaque!</p>
+      <IntroParagraph text={introText.page + ' - ' + introText.text} />
       
       <MapComponent />
     </>

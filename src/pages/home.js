@@ -1,13 +1,23 @@
 import Title from '../components/title';
+import IntroParagraph from '../components/intro';
+
+import { Collections } from './collections';
+
+import IntroMock from '../mocks/intro-mock';
 
 import './home.css';
 
 export function Home() {
+  const introText = IntroMock()[0];
+
   return (
     <>
       <Title text='Mock-up Museum' />
 
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur culpa omnis velit aut asperiores totam illum nostrum sed, in ratione quas, recusandae nam. Repellendus excepturi repudiandae repellat delectus unde quis facere, quia quaerat dicta voluptatum, vitae ducimus, iure consequuntur pariatur ut minima. Obcaecati voluptatum repellat voluptatem laboriosam provident minus iusto!</p>
+      <IntroParagraph text={introText.page + ' - ' + introText.text} />
+
+      <Collections />
+      
     </>
   )
 }

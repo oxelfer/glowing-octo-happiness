@@ -1,0 +1,74 @@
+.object-container {
+  
+}
+
+.object__card {
+  background-color: var(--color-back-sec);
+  display: block;
+  max-width: 620px;
+  margin: 0 auto;
+  padding: 1em 2em;
+  border-radius: 1em;
+  box-shadow: var(--shadow);
+}
+
+.object__card p {
+  margin: 0;
+}
+
+.card__header {
+
+}
+
+.card__title {
+  margin: 0;
+  padding: 1em;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.card__author {
+
+}
+
+.card__picture {
+  
+}
+
+.card__image {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 1em 0;
+}
+
+.card__department {
+  
+}
+
+.card__dimensions {
+
+}
+
+.card__medium {
+
+}
+
+.card__date {
+
+}
+
+.card__ref {
+
+}
+
+.category {
+  font-weight: 700;
+}
+
+@media screen and (max-width: 640px) {
+  .object__card {
+    max-width: 640px;
+    border-radius: 0;
+  }
+}

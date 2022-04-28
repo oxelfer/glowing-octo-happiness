@@ -1,0 +1,26 @@
+.contacts-container {
+  margin: 1em;
+}
+
+.contacts-container p {
+  margin: 0;
+}
+
+.contacts__item {
+  padding: 2em;
+}
+
+.contacts__department {
+  font-family:  'Roboto', Helvetica, Arial, sans-serif;
+  font-variant: small-caps;
+  font-weight: 700;
+  font-size: 1.2em;
+}
+
+.contacts__name {
+
+}
+
+.contacts__email {
+  font-style: italic;
+}

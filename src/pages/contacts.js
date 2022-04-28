@@ -1,12 +1,34 @@
 import Title from '../components/title';
+import IntroParagraph from '../components/intro';
+
+import IntroMock from '../mocks/intro-mock';
+import ContactsMock from '../mocks/contacts-mock';
 
 import './contacts.css';
 
 export function Contacts() {
+  const introText = IntroMock()[4];
+
+  const contacts = ContactsMock();
+
   return (
     <>
       <Title text='Contacts' />
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, tenetur repudiandae aliquam minus delectus accusantium corrupti tempore necessitatibus nulla officia ipsa ipsum aliquid adipisci. Corrupti laudantium a optio modi excepturi deleniti saepe deserunt culpa accusamus vitae autem aut aliquid eum velit nobis voluptas voluptates tempore praesentium, blanditiis doloremque porro ex?</p>
+      
+      <IntroParagraph text={introText.page + ' - ' + introText.text} />
+
+      <div className='contacts-container'>
+      {contacts.map( (item) => {
+        return (
+          <article key={item.id} className='contacts__item'>
+            <p className='contacts__department'>{item.department}</p>
+            <p className='contacts__name'>{item.name}</p>
+            <p className='contacts__email'>{item.email}</p>
+          </article>
+        )
+      })}
+      </div>
+      
     </>
   )
 }

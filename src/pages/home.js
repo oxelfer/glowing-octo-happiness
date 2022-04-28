@@ -1,6 +1,8 @@
 import Title from '../components/title';
 import IntroParagraph from '../components/intro';
 
+import { Collections } from './collections';
+
 import IntroMock from '../mocks/intro-mock';
 
 import './home.css';
@@ -13,6 +15,9 @@ export function Home() {
       <Title text='Mock-up Museum' />
 
       <IntroParagraph text={introText.page + ' - ' + introText.text} />
+
+      <Collections />
+      
     </>
   )
 }

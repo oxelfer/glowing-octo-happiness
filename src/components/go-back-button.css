@@ -1,5 +1,5 @@
 .goback__button {
-  margin-top: 1em;
+  margin: 2em 0;
   background-color: var(--color-mid-blue);
   font-size: 1em;
   color: var(--color-text-white);

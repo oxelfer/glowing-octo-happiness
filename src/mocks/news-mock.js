@@ -7,7 +7,7 @@ export default function NewsItems() {
         subtitle: 'The place of birds in art',
         image: 'robin.jpg',
         alt: 'photograph of a robin',
-        url: '#',
+        url: './catalogue/birds',
         button: 'Visit page'
       },
 
@@ -17,7 +17,7 @@ export default function NewsItems() {
         subtitle: 'Depictions of lizards in art',
         image: 'lizard.jpg',
         alt: 'photograph of a lizard',
-        url: '#',
+        url: './catalogue/lizards',
         button: 'Visit page'
       },
 

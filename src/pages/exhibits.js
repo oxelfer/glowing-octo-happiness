@@ -7,9 +7,6 @@ import GoBackButton from '../components/go-back-button';
 
 import IntroMock from '../mocks/intro-mock';
 
-import bird from '../imgs/bird.jpg';
-import lizard from '../imgs/reptile.jpg';
-
 import './exhibits.css';
 
 export function Exhibits() {
@@ -25,7 +22,7 @@ export function Exhibits() {
         <Link className='exhibits__link' to={{ pathname: '/catalogue/birds' }}>
           <div className='exhibits__container'>
             <picture className='exhibits__picture'>
-              <img className='exhibits__image' src={bird} alt='' />
+              <img className='exhibits__image' src='./imgs/bird.jpg' alt='' />
             </picture>
             <h3 className='exhibits__title'>Bird exhibit</h3>
           </div>
@@ -38,7 +35,7 @@ export function Exhibits() {
         <Link className='exhibits__link' to={{ pathname: '/catalogue/lizards' }}>
           <div className='exhibits__container'>
             <picture className='exhibits__picture'>
-              <img className='exhibits__image' src={lizard} alt='' />
+              <img className='exhibits__image' src='./imgs/reptile.jpg' alt='' />
             </picture>
             <h3 className='exhibits__title'>Lizard exhibit</h3>
           </div>

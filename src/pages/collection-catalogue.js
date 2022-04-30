@@ -59,6 +59,10 @@ export function CollectionCatalogue() {
         })}
       </div>
 
+      {!pieces[0] &&
+        <h2 className='catalogue__loading'>Loading...</h2>
+      }
+
       <GoBackButton />
     </>
   )

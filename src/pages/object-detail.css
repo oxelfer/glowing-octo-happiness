@@ -66,6 +66,10 @@
   font-weight: 700;
 }
 
+.object__loading {
+  text-align: center;
+}
+
 @media screen and (max-width: 640px) {
   .object__card {
     max-width: 640px;

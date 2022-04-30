@@ -1,0 +1,35 @@
+.homecard-container {
+  max-width: 500px;
+}
+
+.homecard__anchor {
+  position: relative;
+  text-decoration: none;
+}
+
+.homecard__picture {
+
+}
+
+.homecard__image {
+  max-width: 100%;
+  transition: 0.5s ease;
+}
+
+.homecard__title {
+  position: absolute;
+  bottom: 2em;
+  left: 2em;
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  color: var(--color-text-white);
+  text-shadow: var(--shadow);
+}
+
+.homecard__anchor:hover .homecard__image {
+  opacity: 0.5;
+}
+
+.homecard__anchor:hover .homecard__title {
+  color: var(--color-text-blue)
+}

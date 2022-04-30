@@ -5,9 +5,9 @@ export default function NewsItems() {
         id: 1,
         title: 'Winged paintings',
         subtitle: 'The place of birds in art',
-        image: 'robin.jpg',
+        image: './imgs/robin.jpg',
         alt: 'photograph of a robin',
-        url: '#',
+        url: './catalogue/birds',
         button: 'Visit page'
       },
 
@@ -15,9 +15,9 @@ export default function NewsItems() {
         id: 2,
         title: 'Lizards in art',
         subtitle: 'Depictions of lizards in art',
-        image: 'lizard.jpg',
+        image: './imgs/lizard.jpg',
         alt: 'photograph of a lizard',
-        url: '#',
+        url: './catalogue/lizards',
         button: 'Visit page'
       },
 
@@ -25,7 +25,7 @@ export default function NewsItems() {
         id: 3,
         title: 'Conservation activities',
         subtitle: 'Join our conservation activities',
-        image: 'workshop.jpg',
+        image: './imgs/workshop.jpg',
         alt: 'photograph of a workshop',
         url: '#',
         button: 'Learn more'

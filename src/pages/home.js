@@ -1,7 +1,7 @@
 import Title from '../components/title';
 import IntroParagraph from '../components/intro';
-
-import { Collections } from './collections';
+import HomeCard from '../components/home-card';
+import CarouselNews from '../components/carousel-news'
 
 import IntroMock from '../mocks/intro-mock';
 
@@ -16,8 +16,21 @@ export function Home() {
 
       <IntroParagraph text={introText.page + ' - ' + introText.text} />
 
-      <Collections />
-      
+      <div className='home-container'>
+        <section className='home__section'>
+          <HomeCard image='cat' text='Go to cats collection' />
+          <HomeCard image='dog' text='Go to dogs collection' />
+          <HomeCard image='sunflower' text='Go to sunflower collection' />
+          <HomeCard image='still-life' text='Go to fruit collection' />
+        </section>
+
+        <CarouselNews />
+        
+        <section className='home__section'>
+          <HomeCard image='bird' text='Go to birds exhibit' />
+          <HomeCard image='reptile' text='Go to lizards exhibit' />
+        </section>
+      </div>
     </>
   )
 }

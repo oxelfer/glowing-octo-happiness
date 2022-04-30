@@ -77,12 +77,12 @@
 
 @media screen and (max-width: 860px) {
   .catalogue-container {
-    grid-template-columns: repeat(1, 400px);
+    grid-template-columns: 400px;
   }
 }
 
 @media screen and (max-width: 640px) {
   .catalogue-container {
-    grid-template-columns: repeat(1, 90%);
+    grid-template-columns: 90%;
   }
 }

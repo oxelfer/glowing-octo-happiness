@@ -1,0 +1,19 @@
+.home-container {
+  margin: 2em 0;
+}
+
+.home__section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-between;
+  justify-items: center;
+  gap: 2em 5em;
+}
+
+@media screen and (max-width: 860px) {
+  .home__section {
+    grid-template-columns: 90%;
+    justify-content: center;
+    justify-items: center;
+  }
+}

@@ -7,11 +7,6 @@ import GoBackButton from '../components/go-back-button';
 
 import IntroMock from '../mocks/intro-mock';
 
-import cat from '../imgs/cat.jpg';
-import dog from '../imgs/dog.jpg';
-import sunflower from '../imgs/sunflower.jpg';
-import fruit from '../imgs/still-life.jpg'; 
-
 import './collections.css';
 
 export function Collections() {
@@ -27,7 +22,7 @@ export function Collections() {
         <Link className='collection__link' to={{ pathname: '/catalogue/cats' }}>
           <div className='collection__container'>
             <picture className='collection__picture'>
-              <img className='collection__image' src={cat} alt='' />
+              <img className='collection__image' src='./imgs/cat.jpg' alt='' />
             </picture>
             <h3 className='collection__title'>Cat collection</h3>
           </div>
@@ -38,7 +33,7 @@ export function Collections() {
         <Link className='collection__link' to={{ pathname: '/catalogue/dogs' }}>
           <div className='collection__container'>
             <picture className='collection__picture'>
-              <img className='collection__image' src={dog} alt='' />
+              <img className='collection__image' src='./imgs/dog.jpg' alt='' />
             </picture>
             <h3 className='collection__title'>Dog collection</h3>
           </div>
@@ -51,7 +46,7 @@ export function Collections() {
         <Link className='collection__link' to={{ pathname: '/catalogue/sunflowers' }}>
           <div className='collection__container'>
             <picture className='collection__picture'>
-              <img className='collection__image' src={sunflower} alt='' />
+              <img className='collection__image' src='./imgs/sunflower.jpg' alt='' />
             </picture>
             <h3 className='collection__title'>Sunflower collection</h3>
           </div>
@@ -62,7 +57,7 @@ export function Collections() {
         <Link className='collection__link' to={{ pathname: '/catalogue/fruit' }}>
           <div className='collection__container'>
             <picture className='collection__picture'>
-              <img className='collection__image' src={fruit} alt='' />
+              <img className='collection__image' src='./imgs/still-life.jpg' alt='' />
             </picture>
             <h3 className='collection__title'>Fruit collection</h3>
           </div>

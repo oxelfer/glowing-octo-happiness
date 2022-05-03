@@ -4,6 +4,7 @@ import './header.css';
 
 export default function Header() {
 
+  // Hides menu in mobile layout
   const hideMenu = () => {
     let menu = document.getElementById('nav-mob-menu');
     let symbol = document.getElementById('click-symbol');

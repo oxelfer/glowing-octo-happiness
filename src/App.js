@@ -18,6 +18,8 @@ import Newsletter from './components/newsletter';
 import Footer from './components/footer';
 
 function App() {
+  /* defines params.search to implement API search by theme in collection-catalogue.js
+  and params.id to fetch the selected item in object-detail.js */
   return (
     <>
       <header>
@@ -30,7 +32,7 @@ function App() {
           <Route path='/' element={<Home />} />
           <Route path='/collections' element={<Collections />} />
           <Route path='/catalogue/:search' element={<CollectionCatalogue />} />
-          <Route path="/object/:id" element={<ObjectDetail />} />
+          <Route path='/object/:id' element={<ObjectDetail />} />
           <Route path='/exhibits' element={<Exhibits />} />
           <Route path='/about' element={<About />} />
           <Route path='/contacts' element={<Contacts />} />

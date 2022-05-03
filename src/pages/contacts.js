@@ -7,6 +7,7 @@ import ContactsMock from '../mocks/contacts-mock';
 import './contacts.css';
 
 export function Contacts() {
+  // Data from mock (intro-mock), bound to mock item index
   const introText = IntroMock()[4];
 
   const contacts = ContactsMock();

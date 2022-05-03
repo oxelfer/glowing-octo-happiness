@@ -6,8 +6,8 @@ import './carousel-news.css';
 
 export default function CarouselNews() {
 
+  // Data from mock, images in public/imgs folder
   const newsItems = NewsItems();
-  /* console.log(newsItems); */
 
   const [current, setCurrent] = useState(0);
 

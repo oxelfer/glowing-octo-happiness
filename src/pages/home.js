@@ -8,8 +8,10 @@ import IntroMock from '../mocks/intro-mock';
 import './home.css';
 
 export function Home() {
+  // Data from mock (intro-mock), bound to mock item index
   const introText = IntroMock()[0];
 
+  // Sends props to HomeCard component
   return (
     <>
       <Title text='Mock-up Museum' />

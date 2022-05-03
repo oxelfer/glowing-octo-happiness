@@ -1,6 +1,7 @@
 import './home-card.css';
 
 export default function HomeCard(props) {
+  // Card component layout with dynamic info (applied in Home page)
   return (
     <div className='homecard-container'>
       <a className='homecard__anchor' href={`./catalogue/${props.image}`}>

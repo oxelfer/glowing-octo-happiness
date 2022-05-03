@@ -6,6 +6,7 @@ import IntroMock from '../mocks/intro-mock';
 import './about.css';
 
 export function About() {
+  // Data from mock (intro-mock), bound to mock item index
   const introText = IntroMock()[3];
 
   return (

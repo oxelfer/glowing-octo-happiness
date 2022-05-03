@@ -10,6 +10,7 @@ import IntroMock from '../mocks/intro-mock';
 import './collections.css';
 
 export function Collections() {
+  // Data from mock (intro-mock), bound to mock item index
   const introText = IntroMock()[1];
 
   return (

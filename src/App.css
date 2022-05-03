@@ -3,6 +3,8 @@
   margin-top: 5em;
 }
 
+/* For responsive menu implementation in smaller screen sizes */
+/* To hide menu in mobile layout in Header component - header.js */
 @media screen and (max-width: 640px) {
   #main-content {
     margin-top: 23em;

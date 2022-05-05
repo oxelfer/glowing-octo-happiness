@@ -67,5 +67,5 @@ export function Collections() {
 
       <GoBackButton />
     </>
-  )
+  );
 }

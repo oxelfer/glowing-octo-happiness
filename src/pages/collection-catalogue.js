@@ -70,5 +70,5 @@ export function CollectionCatalogue() {
 
       <GoBackButton />
     </>
-  )
+  );
 }

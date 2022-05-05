@@ -64,5 +64,5 @@ export default function CarouselNews() {
       </div>
     </div>
     
-  )
+  );
 }

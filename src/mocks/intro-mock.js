@@ -49,5 +49,5 @@ export default function IntroMock() {
         text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam adipisci reiciendis ex tempora voluptates debitis nisi omnis quos. Accusamus incidunt pariatur sapiente et facilis ullam atque ipsum qui ipsam aspernatur consequuntur in minus saepe voluptatem reiciendis neque suscipit vel praesentium, sequi nesciunt, facere laborum necessitatibus rerum animi. Impedit illum ut consequuntur facere velit soluta, animi dignissimos cupiditate accusamus magni modi minus, ea, minima possimus architecto fugiat! Tempore iure, excepturi dolore totam est esse recusandae officia eos aut eius ut, maxime dignissimos, fugit adipisci.',
       }
     ]
-  )
+  );
 }

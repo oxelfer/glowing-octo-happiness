@@ -12,5 +12,5 @@ export default function HomeCard(props) {
       </a>
       
     </div>
-  )
+  );
 }

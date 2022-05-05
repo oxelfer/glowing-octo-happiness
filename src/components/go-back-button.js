@@ -7,5 +7,5 @@ export default function GoBackButton() {
 
   return (
     <button className='goback__button' onClick={() => navigate(-1)}>Previous page</button>
-  )
+  );
 }

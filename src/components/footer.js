@@ -48,7 +48,7 @@ export default function Footer() {
       </div>
 
       <div className='footer__copyrights'>
-        <p>All rights reserved &copy; Mock-up Museum</p>
+        <p>All rights reserved &copy; {new Date().getFullYear()} Mock-up Museum</p>
       </div>
 
     </footer>
